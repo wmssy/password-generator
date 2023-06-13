@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
     </head>
+    
     <body>
 
     <div id="text">
@@ -16,15 +17,15 @@
     <div id="mid-section">
         
         <div class="buttons">
-            <button id="btn">Generate password</button>
+            <button id="btn" onclick="refresh()">Generate passwords</button>
 
         </div>
 
         <div class="checkboxes">
-            <input type="checkbox" id="checkbox" name="checkbox" />
+            <input type="checkbox" id="checkbox1-el" name="checkbox" />
             <label for="checkbox">Add numbers</label>
             
-            <input type="checkbox" id="checkbox2" name="checkbox" />
+            <input type="checkbox" id="checkbox2-el" name="checkbox2" />
             <label for="checkbox">Add symbols</label>
 
         </div>
@@ -33,11 +34,11 @@
     </div>
 
     <div class="text-output-group">
-        <div id="pwd1">3939393939</div>
-        <div id="pwd2">5j5j5j55jj5j5j5j5j5j5j5j5j</div>
-
+        <button id="pwd1-el" onclick="copyToClipboard(one)"></button>
+        <button id="pwd2-el" onclick="copyToClipboard(two)"></button>
+        <button id="pwd3-el" onclick="copyToClipboard(three)"></button>
     </div>
-        
-        <script src="index.js"></script>
+    <h3>Click on a password to copy</h3>
+        <script language="javascript" type="text/javascript" src="index.js"></script>
     </body>
 </html>
